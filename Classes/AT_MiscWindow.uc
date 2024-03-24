@@ -6,7 +6,7 @@ class AT_MiscWindow extends UWindowPageWindow config(AdminTool);
 
 var UWindowSmallButton  NetSpeedsButton;
 var UWindowSmallButton  IPsButton;
-var UWindowSmallButton  ForceStartButton;
+var UWindowSmallButton  ShowDemosButton;
 var UWindowSmallButton  RedeemerButton;
 var UWindowSmallButton  DamageAmpButton;
 var UWindowSmallButton  InvisibilityButton;
@@ -38,8 +38,8 @@ function Created()
 	IPsButton.SetText("Show"); 
 
       Top += Height;
-	ForceStartButton = UWindowSmallButton(CreateControl(class'UWindowSmallButton', 114.0,50.0,200.0,35.0));
-	ForceStartButton.SetText("Force"); 
+	ShowDemosButton = UWindowSmallButton(CreateControl(class'UWindowSmallButton', 114.0,50.0,200.0,35.0));
+	ShowDemosButton.SetText("Show"); 
 
       Top += Height;
 	RedeemerButton = UWindowSmallButton(CreateControl(class'UWindowSmallButton', 114.0,70.0,200.0,35.0));
@@ -103,7 +103,7 @@ function Paint(Canvas C, float X, float Y)
 
   WriteText(C, "Show Netspeeds", 12);
   WriteText(C, "Show IPs", 32);
-  WriteText(C, "Force Start:", 52);
+  WriteText(C, "Show Demos", 52);
   WriteText(C, "Redeemer:", 72);
   WriteText(C, "Big Keg O' Health:", 92);
   WriteText(C, "Invisibility:", 112);
@@ -128,10 +128,10 @@ function Notify(UWindowDialogControl C, byte E)
                               GetPlayerOwner().ClientMessage("IPs:");
 					GetPlayerOwner().ConsoleCommand("mutate pureshowips");
 					return;
-				case ForceStartButton:
+				case ShowDemosButton:
 					if (!AdminCheck(True)) return;
-                              GetPlayerOwner().ClientMessage("Admin is trying to force game to Start");
-					GetPlayerOwner().ConsoleCommand("mutate pureforcestart");
+                              GetPlayerOwner().ClientMessage("Listing which players are recording demos:");
+					GetPlayerOwner().ConsoleCommand("mutate pureshowdemos");
 					return;
 				case RedeemerButton:
 					if (!AdminCheck(True)) return;
@@ -184,7 +184,7 @@ function Tick( float DeltaTime )
     {
         NetSpeedsButton.bDisabled = False;
         IPsButton.bDisabled = False;
-        ForceStartButton.bDisabled = False;
+        ShowDemosButton.bDisabled = False;
         RedeemerButton.bDisabled = False;
         DamageAmpButton.bDisabled = False;
         InvisibilityButton.bDisabled = False;
@@ -198,7 +198,7 @@ function Tick( float DeltaTime )
     {
         NetSpeedsButton.bDisabled = True;
         IPsButton.bDisabled = True;
-     	ForceStartButton.bDisabled = True;
+     	ShowDemosButton.bDisabled = True;
         RedeemerButton.bDisabled = True;
         DamageAmpButton.bDisabled = True;
         InvisibilityButton.bDisabled = True;
