@@ -36,17 +36,17 @@ It should look like this:
 
 ### Miscellaneous Options
 - **Show Netspeeds and IPs**: Display the netspeeds and IPs of connected players.
-- **Force Start**: Force the game to start regardless of player readiness. _(Requires UTPure)_
+- **Show Demos**: Display a list of players who are recording demos.
 - **Powerup Management**: Remove specific items (e.g., Redeemer, Damage Amp) from the current match.
 - **Bot Management**: Add a specific number of bots to the match or remove all bots.
 
 ### HOW IT LOOKS:
 
-<img width="393" alt="image" src="https://github.com/rxut/UTAdminTool/assets/126023192/b32c00af-ac0e-4b40-a03b-404cec726e14">
+<img width="393" alt="image" src="https://github.com/rxut/UTAdminTool/assets/126023192/f3400d1d-603d-478a-becf-d1f6e1010606">
 <br>
-<img width="389" alt="image" src="https://github.com/rxut/UTAdminTool/assets/126023192/e4ff11ec-3f64-4f77-9752-74ffc36e1e85">
+<img width="393" alt="image" src="https://github.com/rxut/UTAdminTool/assets/126023192/97253368-99bb-41b0-b403-d6f609d9b64b">
 <br>
-<img width="383" alt="image" src="https://github.com/rxut/UTAdminTool/assets/126023192/c3ffcdf8-0427-44e3-9687-fea2588e232f">
+<img width="393" alt="image" src="https://github.com/rxut/UTAdminTool/assets/126023192/f8711db1-219d-4509-a627-9efffd4a5335">
 <br>
 
 For support and further information, visit [https://ut99tdm.com/discord](https://ut99tdm.com/discord).
