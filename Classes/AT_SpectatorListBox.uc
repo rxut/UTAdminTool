@@ -88,7 +88,7 @@ function LoadList()
 	for (i=0; i<32; i++)
 	 if (L.PRIArray[i] != None)  
 	 {
-	  if (L.PRIArray[i].bIsSpectator && !L.PRIArray[i].bWaitingPlayer && L.PRIArray[i].StartTime > 0)
+	  if (L.PRIArray[i].bIsSpectator && L.PRIArray[i].bWaitingPlayer && L.PRIArray[i].StartTime > 0)
 	  {
 	   Specs = AT_List(Items.Append(class'AT_List'));
 	   Specs.Name = L.PRIArray[i].PlayerName;
